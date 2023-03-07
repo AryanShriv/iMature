@@ -1,0 +1,522 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    padding: 50px;
+    margin-top: 20px;
+}
+
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    text-align: center;
+    font-weight: bolder;
+    color: #05729D;
+}
+
+.text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+/* conatiner */
+.container {
+    margin: 0 80px;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    left: 0;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* hero-sec */
+.hero-sec {
+
+    margin-bottom: 6vh;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    top: 26vh;
+    left: 0;
+}
+
+.hero-text img {
+    width: 38vw;
+    height: 70vh;
+}
+
+/* Is your child suffering from the same addiction */
+/* right-card */
+.card-1-right {
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    width: 58%;
+    height: 145px;
+    background-color: #05729d6e;
+    border-radius: 200px;
+}
+
+.card-1-right p {
+    padding: 0 3vw;
+}
+
+.card-1-img img {
+    border-radius: 100px;
+    width: 135px;
+    height: 135px;
+    position: relative;
+    left: .3vw;
+}
+
+/* left card */
+.card-1-left {
+    position: relative;
+    top: 0;
+    left: 42%;
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    width: 58%;
+    height: 145px;
+    background-color: #eea47f79;
+    border-radius: 200px;
+}
+
+.card-1-left p {
+    padding: 0 3vw;
+}
+
+.card-1-left-img img {
+    border-radius: 100px;
+    width: 135px;
+    height: 135px;
+    position: relative;
+    right: 0.3vw;
+    top: 0.1vh;
+}
+
+/* How you can be hero for your child through Digital Citizenship And Internet Maturity */
+.sec-2 {
+    margin: 5vh 0;
+    margin-bottom: 7vh;
+}
+
+.card-2-group {
+    margin-top: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5vh;
+    justify-content: space-around;
+}
+
+.card-2 {
+    background-color: rgba(5, 114, 157, 0.05);
+    border-radius: 50px;
+    box-shadow: 25px 25px 20px rgba(5, 114, 157, 0.15);
+    width: 500px;
+    height: 370px;
+}
+
+.card-2-img img {
+    width: 30%;
+    position: relative;
+    top: 2vh;
+    left: 50%;
+    transform: translateX(-60%);
+}
+
+.card-2 a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #5C548E;
+    position: relative;
+    margin-left: 40%;
+}
+
+.card-2 p {
+    text-align: center;
+    margin: 3.5vh 3vw;
+}
+
+/* Resources For Parents */
+.cta-sec {
+    border: 2px solid #05729D;
+    padding: 12vh 0;
+}
+
+.resources-text p {
+    text-align: center;
+    color: #686666;
+    font-size: 15px;
+}
+
+.cta-button a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #05729D;
+    border: 0px;
+    border-color: #05729D;
+    text-decoration: none;
+}
+
+.cta-button button {
+    background-color: #05729D;
+    border: 0px;
+    border-color: #05729D;
+    text-decoration: none;
+    border-radius: 54px;
+    padding: 1.2vh 1.5vw;
+    margin-top: 1.5vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* intiative banner  */
+.intiative-banner {
+    display: flex;
+    align-items: center;
+    background-color: #05729D;
+}
+
+.intiative-banner img {
+    width: 8%;
+    margin-left: 40%;
+}
+
+.intiative-banner p {
+    font-size: 25px;
+}
+
+.in-logo img {
+    width: 20%;
+    margin-left: 20px;
+}
+
+/* Footer */
+.footer {
+    background: rgba(5, 114, 157, 0.211);
+}
+
+.footer .logo {
+    padding: 3vh 0;
+}
+
+.footer a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+.footer-links p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.number {
+    display: flex;
+    gap: 5px;
+    margin: 2px 0;
+}
+
+.heading2 p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #05729D;
+    margin-bottom: 5px;
+}
+
+.about {
+    width: 30%;
+}
+
+.about-content {
+    font-size: 10px;
+}
+
+.contact-us {
+    width: 15%;
+}
+
+.contact-us img {
+    width: 10%;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* row3 */
+.row-3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 0;
+}
+
+.footer-intiative {
+    display: flex;
+    align-items: center;
+}
+
+.footer-intiative img {
+    width: 7%;
+}
+
+.follow {
+    width: 18.5%;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.socials img {
+    width: 10%;
+}
+
+/* footer2 */
+.footer-2 {
+    background-color: #05729D;
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh 18vw;
+}
+
+.footer-2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        margin: 1rem 0;
+    }
+
+    .logo img {
+        width: 50%;
+        height: auto;
+    }
+
+    .hero-text p {
+        font-size: 24px;
+        top: 12vh;
+    }
+
+    .hero-text img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-1-right,
+    .card-1-left {
+        width: 100%;
+        left: 0;
+        border-radius: 0;
+    }
+
+    .card-1-img img,
+    .card-1-left-img img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .sec-2 {
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+
+    .card-2-group {
+        justify-content: center;
+    }
+
+    .card-2 {
+        width: 80%;
+        height: auto;
+    }
+
+    .card-2-img img {
+        width: 40%;
+    }
+
+    .card-2 a {
+        margin-left: 35%;
+    }
+
+}
+
+/* Initiative */
+
+
+.initiate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.initiate_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(81, 187, 217);
+    padding: 30px;
+}
+
+.initiate_content p {
+    font-size: 3.5rem;
+    font-weight: 1000;
+    color: black;
+}
+
+p span {
+    color: red;
+}
+
+p .white {
+    color: white;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.footer-col:last-of-type {
+    margin-right: 0;
+}
+
+.footer-col h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer-col p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-col li {
+    margin-bottom: 10px;
+}
+
+.footer-col i {
+    margin-right: 10px;
+}
+
+.footer-col a {
+    color: #fff;
+    text-decoration: none;
+}
