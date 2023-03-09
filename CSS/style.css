@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+
 /* Base styles */
+
+
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
+
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
 .section {
@@ -86,7 +95,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../Images/HeroPage-BG.png");
+  background-image: url("../Images/LandingPage/HeroPage-BG.png");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -211,7 +220,7 @@ nav {
   margin-top: 50px;
   padding: 20px 40px;
   width: 40%;
-  background-color: #d8f0f9;
+  background-color: #6bb1fd;
   border-radius: 50px 0px;
 }
 
