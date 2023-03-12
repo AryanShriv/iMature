@@ -42,13 +42,14 @@ body {
 }
 
 /* navbar */
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: #fff;
-    color: #333;
+    color: #000000;
     left: 0;
 }
 
@@ -69,15 +70,15 @@ nav {
 }
 
 .menu li a {
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
-    color: #333;
+    color: black;
     padding: 10px;
     transition: all 0.3s ease;
 }
 
 .menu li a:hover {
-    background-color: #555;
+    color: #0077ff;
     border-radius: 4px;
 }
 
@@ -93,7 +94,6 @@ nav {
     margin: 5px;
     transition: all 0.3s ease;
 }
-
 /* hero-sec */
 .hero-sec {
 
@@ -105,37 +105,42 @@ nav {
     justify-content: space-around;
 }
 
-.hero-text p {
+.hero-text h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 60px;
-    text-align: center;
     font-weight: 900;
     text-align: center;
     position: relative;
     top: 26vh;
     left: 0;
-    color: #2a7f88;
 }
 
 .hero-text img {
-    width: 38vw;
+    width: 40vw;
     height: 70vh;
 }
 
 /* Is your child suffering from the same addiction */
+
 /* right-card */
+
 .card-1-right {
     margin-top: 3vh;
     display: flex;
     align-items: center;
-    width: 58%;
-    height: 145px;
-    background-color: #05729d6e;
-    border-radius: 200px;
+    width: 48%;
+    height: 181px;
+    position: relative;
+    top: 0;
+    left: 20%;
+    background-color: #05729d;
+    border-radius: 100px 25px 25px 100px;
+
 }
 
 .card-1-right p {
     padding: 0 3vw;
+    color: white;
 }
 
 .card-1-img img {
@@ -146,22 +151,27 @@ nav {
     left: .3vw;
 }
 
+
+
 /* left card */
+
+
 .card-1-left {
     position: relative;
     top: 0;
-    left: 42%;
+    left: 38%;
     margin-top: 3vh;
     display: flex;
     align-items: center;
-    width: 58%;
-    height: 145px;
-    background-color: #eea47f79;
-    border-radius: 200px;
+    width: 48%;
+    height: 180px;
+    background-color: #ff9f01;
+    border-radius: 25px 100px 100px 25px;
 }
 
 .card-1-left p {
     padding: 0 3vw;
+    color: white;
 }
 
 .card-1-left-img img {
@@ -480,52 +490,175 @@ p .white {
 /* Footer */
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 50px;
+    background-color: #f7f7f7;
+    padding: 60px 0;
+    overflow: hidden;
 }
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.footer-col {
-    flex: 1;
-    margin-right: 40px;
+.footer-column {
+    width: calc(100% / 3 - 30px);
+    margin-bottom: 30px;
 }
 
-.footer-col:last-of-type {
-    margin-right: 0;
-}
-
-.footer-col h3 {
-    font-size: 1.5rem;
+.footer-column h4 {
+    color: #444;
+    font-size: 20px;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
-.footer-col p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+.footer-column p {
+    color: #777;
+    font-size: 14px;
+    line-height: 22px;
 }
 
-.footer-col ul {
+.footer-column ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.footer-col li {
+.footer-column ul li {
     margin-bottom: 10px;
 }
 
-.footer-col i {
-    margin-right: 10px;
+.footer-column ul li a {
+    color: #444;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
-.footer-col a {
+.footer-column ul li a:hover {
+    color: #007bff;
+}
+
+footer form input[type="email"] {
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+    width: 70%;
+}
+
+footer form button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 5px 5px 0;
     color: #fff;
-    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    width: 30%;
+}
+
+footer form button[type="submit"]:hover {
+    background-color: #0062cc;
+}
+
+.footer-scroll {
+    height: 10px;
+    background-color: #007bff;
+    animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* TRIAL - 2 */
+
+
+.carousel-container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 5s linear;
+    z-index: 1;
+}
+
+.carousel-slides {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 0;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.carousel-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.carousel-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    width: 40px;
 }
